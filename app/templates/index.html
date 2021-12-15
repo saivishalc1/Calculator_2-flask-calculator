@@ -3,6 +3,10 @@
 {% block head %}
 
     <style>
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+
     </style>
 {% endblock %}
 {% block content %}
@@ -12,5 +16,7 @@
     <p class="important">
       Home Page
     </p>
+    <div>
     <img src="{{ url_for('static', filename='images/sample.jpeg') }}">
+    </div>
 {% endblock %}

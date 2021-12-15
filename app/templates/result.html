@@ -21,10 +21,8 @@
     {% endwith %}
 
     <h2>Result Table</h2>
-    <p>The completed operation will be displayed in the form of a table. Do not worry you will be able to see all the
-    results in another table.</p>
+    <p>Click on the results tab and you will see the new table with all the old values also</p>
     <br>
-    {% if data %}
         <table id="data" class="table table-striped">
             <thead>
                 <tr>
@@ -35,19 +33,12 @@
                 </tr>
             </thead>
             <tbody>
-                {% for item in data %}
                 <tr>
                     <td class="c1">{{ value1 }}</td>
                     <td class="c2">{{ value2 }}</td>
                     <td class="c3"><SPAN>{{ operation }}</SPAN></td>
                     <td class="c4"><SPAN>{{ result }}</SPAN></td>
                 </tr>
-            {% endfor %}
             </tbody>
         </table>
-        {% else %}
-            <h3>There are no calculations</h3>
-    {% endif %}
-
-
 {% endblock %}

@@ -28,7 +28,7 @@ def calculator_post():
     """R"""
     return CalculatorController.post()
 
-@app.route("/history", methods=["GET"])
+@app.route("/history", methods=['GET'])
 def table_get():
     """A simple flask web app"""
     return HistoryController.get()
