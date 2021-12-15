@@ -1,25 +1,53 @@
 {% extends "base.html" %}
-{% block title %}Index{% endblock %}
+{% block title %}Calculation Results{% endblock %}
 {% block head %}
     {{ super() }}
     <style type="text/css">
-        .important { color: #336699; }
+        .important {
+            color: #336699;
+        }
     </style>
 {% endblock %}
 {% block content %}
     <h1>Calculation Result</h1>
     {% with messages = get_flashed_messages() %}
-    {% if messages %}
-        {% for message in messages %}
-            <div class="alert alert-success" role="alert">
-                {{ message }}
-            </div>
-        {% endfor %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-success" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <h2>Result Table</h2>
+    <p>The completed operation will be displayed in the form of a table. Do not worry you will be able to see all the
+    results in another table.</p>
+    <br>
+    {% if data %}
+        <table id="data" class="table table-striped">
+            <thead>
+                <tr>
+                    <th><strong>Value 1: </strong> </th>
+                    <th><strong>Value 2: </strong> </th>
+                    <th><strong>Operation: </strong></th>
+                    <th><strong>Result: </strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                <tr>
+                    <td class="c1">{{ value1 }}</td>
+                    <td class="c2">{{ value2 }}</td>
+                    <td class="c3"><SPAN>{{ operation }}</SPAN></td>
+                    <td class="c4"><SPAN>{{ result }}</SPAN></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+            <h3>There are no calculations</h3>
     {% endif %}
-{% endwith %}
-    <strong>Value 1: </strong> {{ value1 }} <br>
-    <strong>Value 2: </strong> {{ value2 }} <br>
-    <strong>Operation: </strong> {{ operation }} <br>
-    <strong>Result: </strong> {{ result }}
+
 
 {% endblock %}

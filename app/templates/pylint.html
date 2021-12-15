@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <article id="the-cosmos">
+
+        <h1>Pylint</h1>
+       <h3>What is Pylint</h3>
+       <p>
+           Pylint is a source code, bug and quality checker, and all that means is that it is just a tool that checks for errors in python code. It will also tell you about certain lines of code that have errors and additional things to look out for, as well as the type of errors.
+
+            Now that you know what Pylint is, we are going to learn how to implement pyint. So the first that you are going to need to do is download python. ------. After that you are going to have to run this command on your terminal or command prompt. python -m pip install pylint. The command to use python on your python file is going to have to be pylint filename.py.
+       </p>
+
+    <h3>Factory</h3>
+        <p>
+            A factory in python is an object that lets you create other objects. It is a function that or method that solves the problem of creating product objects without having to say their specific classes. The method is used for creating objects instead of calling the constructor.
+
+        </p>
+
+        <h3>Instantiation</h3>
+        <p>
+            Instantiation means you are copying all the data from a class which has all the class variables and methods. To do an Instantiation, we are going to need to have to call the class and then place the arguments after __init__(place arguments here).
+        </p>
+
+        <img src="https://i.stack.imgur.com/whCZm.png" width="600px" height="400px" style="display:block; margin-left: auto;margin-right: auto;">
+
+        <h3>Object</h3>
+        <p>
+            All an object is just a collection of data, both variables and methods.An object is also called an instance of a class, and that is because a class can be thought of as a blueprint of a house where an object is the actual house.
+        </p>
+
+        <h3>Class </h3>
+        <p>
+            As said before, a class can be thought of as a blueprint of a house. So whenever a class object is instantiated, there is going to be a new object that is created from scratch. Overall, a class tells about the contents of the objects that belong to it.
+        </p>
+
+        <img src="https://intellipaat.com/mediaFiles/2019/03/python10.png" width="600px" height="400px" style="display:block; margin-left: auto;margin-right: auto;">
+
+        <h3>Namespace</h3>
+        <p>
+            Namespaces are a unique name that each object has for each python class. It is used to organize code so that there is no confusion if there are objects or variables that are the same name.
+        </p>
+
+        <h3>Constructor</h3>
+        <p>
+            When we create an object a method is then called, and for that the method named is the constructor.  To call the constructor we have to use the function __init__, so def function __init__(self). We have to use the keyword self, which basically means it is referring to itself.
+        </p>
+
+        <h3>Fixture</h3>
+        <p>
+            Fixture are functions that will run before each test function.To perform a simple pytest you would have to write this @pytest.fixture.
+        </p>
+
+        <h3>Typehint</h3>
+        <p>
+            All a type hint is a solution to indicate the type of value that is in your source code. The point of type hint is to make it easier to perform tests and for generating code.
+        </p>
+
+        <h3>Typecast</h3>
+        <p>
+            This is a method that converts the variable data type into a certain data type into a different operation based on the operation that is requested based on the user. So for example, if you have a=10 then do print(type(a)), this will give us an int.
+        </p>
+
+        <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/12/Type-Casting-in-Python-1-1.jpg" width="600px" height="500px" style="display:block; margin-left: auto;margin-right: auto;">
+
+        <h3>Unit test</h3>
+        <p>
+            All unit testing is a software testing method that allows users to use individual pieces of code to be put under various tests to check if it is working and running.
+        </p>
+
+        <h3>Static</h3>
+        <p>
+            An important thing to know about static would be that if you change a static variable in one instance of a class then the change will affect its value in other instances.
+        </p>
+
+        <img src="https://oluchiorji.com/wp-content/uploads/2020/06/carbon4-805x452.png" width="700px" height="600px" style="display:block; margin-left: auto;margin-right: auto;">
+
+        <h3>Class Method</h3>
+        <p>
+            A class method allows for the method to be directed to the class and just not to the object. The method is able to take the state of the class as a state parameter and that points it towards the class.
+        </p>
+
+        <h3>Facade</h3>
+        <p>
+            A facade provides a deep interface to a whole complex set of classes, which are called libraries of frameworks. The main overall purpose of a facade is to reduce the overall complexity of the program, it can also help with removing dependencies that have been downloaded.
+        </p>
+
+        <h3>Design Patterns</h3>
+        <p>
+            This is part of the most important parts of Software Engineering. This is because it is a template for how to solve a problem that can be used for different solutions.
+
+        </p>
+
+        <h3>Method</h3>
+        <p>
+            Methods are functions that are given based on an object’s type. For example, say we that we create a list of students in IS218, and do is_218students = [“bob”,”kevin”,”issac” ], we can use the .append() method in python to add another person into this list. This would be called a .append() method.
+
+        </p>
+
+        <h3>Property</h3>
+        <p>
+            A Property is a built in function that allows you to create and return a property object. There are 3 methods that you can perform with the property function and that would be the getter(), setter(), and the delete(). The getter() method gets the value of a property. The setter(0 method sets the value of the property. The delete() method is used to delete objects.
+        </p>
+
+    </article>
+{% endblock %}

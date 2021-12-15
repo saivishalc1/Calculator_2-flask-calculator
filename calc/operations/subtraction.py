@@ -1,24 +1,13 @@
-"""Subtraction class"""
-from abc import abstractmethod
+"""Subtraction Class"""
 
-from calc.operations.calculation import Calculation
+from calc.calculations.calculation import Calculation
 
-
-# pylint: disable=too-few-public-methods, missing-function-docstring
-
-class Math(Calculation):
-    """Subtracting numbers"""
-    @abstractmethod
-    def get_result(self):
-        pass
-
-
-class Subtraction(Math):
-    """Subtracting numbers"""
-
+class Subtraction(Calculation):
+    """subtraction calculation object"""
     def get_result(self):
         """get the subtraction results"""
-        result = 0.0
+        difference_of_values = 0.0
         for value in self.values:
-            result = result - value
-        return result
+            difference_of_values = self.values[0]
+            difference_of_values =   difference_of_values - value
+        return difference_of_values

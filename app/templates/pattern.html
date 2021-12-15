@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <article id="the-cosmos">
+
+          <h1>What is SOC</h1>
+
+        <p>
+        Separation of concerns is a really important fundamental part of software development. The principle is that it is important to not write your code in huge blocks of code, and to instead break up the code into little chunks so that each tiny part of the code will be able to complete each distinct job. It is a design pattern that separates each section to address a separate concern.
+
+        The benefit of SOC is that it makes the code more stable and allows for increased maintainability, and there are numerous other benefits.
+
+        </p>
+
+        <img src="https://image.slidesharecdn.com/ninagrantcharova-approachtoseparationofconcernsviadesignpatterns-140827110331-phpapp02/95/nina-grantcharova-approach-to-separation-of-concerns-via-design-patterns-2-638.jpg?cb=1409137455" width="700px" height="400px" style="display:block; margin-left: auto;margin-right: auto;">
+
+        <h3>How it realtes to the calculaor program</h3>
+        <p>
+            This relates to our calculator program because in the calculator program each section such as addition, subtraction, multiplication, and division are all separated into their own distinctive files. As well as the test calculator.
+        </p>
+
+        <p>
+            https://github.com/saivishalc1/calc_example1
+        </p>
+
+
+    </article>
+{% endblock %}

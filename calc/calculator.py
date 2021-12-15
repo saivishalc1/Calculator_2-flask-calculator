@@ -37,3 +37,10 @@ class Calculator:
         """ multiplication number from result"""
         Calculations.add_division(tuple_values)
         return True
+
+    #@staticmethod
+    #def getHistory():
+        #""" Get history """
+        #ret_list = []
+        #    ret_list.append(Calculations.history[i].get_result())
+        #return ret_list

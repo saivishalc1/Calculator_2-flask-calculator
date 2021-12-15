@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <article id="the-cosmos">
+
+        <h1>Docker</h1>
+
+        <p>
+
+            So, what is Docker might be your first question when learning about it. Docker is a platform used for making containers. Of course you can make containers without Docker, but with Docker it is much easier, safer, and simpler than other containers.
+        </p>
+
+        <h3>Containers:</h3>
+        <p>
+            Containers are “runnable instances of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.”
+        </p>
+
+        <img src="https://cdn-media-1.freecodecamp.org/images/1*hZgRPWerZVbaGT8jJiJZVQ.png" width="600px" height="600px" style="display:block; margin-left: auto;margin-right: auto;">
+
+
+        <h3></h3>
+        <p>
+            Docker allows you to manage your applications just like the way you are able to manage your infrastructure.
+        </p>
+
+        <img src="https://www.servernoobs.com/wp-content/uploads/2020/04/what-is-docker.jpg" width="600px" height="600px" style="display:block; margin-left: auto;margin-right: auto;">
+    </article>
+{% endblock %}

@@ -1,0 +1,13 @@
+num1,num2,operation,result
+1,2,addition,3.0
+1,2,subtraction,-1.0
+10,2,multiplication,20.0
+1,2,division,0.5
+15,2,subtraction,13.0
+15,2,multiplication,30.0
+16,4,division,4.0
+5,2,multiplication,10.0
+10,2,division,5.0
+10,2,addition,12.0
+6,2,multiplication,12.0
+1,2,addition,3.0
